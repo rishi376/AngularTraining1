@@ -1,0 +1,14 @@
+<p>List Notes works</p>
+
+<div *ngIf="notes?.length != 0">
+    There are {{notes?.length}} notes found..
+    <div *ngFor="let note of notes">
+        {{note.id}} | {{note.content}}
+    </div>
+</div>
+
+<div class="router-container">
+    <a routerLink=''>home</a>
+    <br>
+    <a routerLink='/add'>add</a>
+</div>
